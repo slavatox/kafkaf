@@ -10,21 +10,22 @@ angular.module('myApp', [
   'myApp.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/О кафедре', {templateUrl: 'partials_en/Ab_al.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Бакалавриат', {templateUrl: 'partials_en/Bag_k.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Контакты', {templateUrl: 'partials_en/Kont_al.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Магистратура', {templateUrl: 'partials_en/Mg_s.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Научная работа', {templateUrl: 'partials_en/Nayc_k.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Специалитет', {templateUrl: 'partials_en/Spec_s.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Преподаватели', {templateUrl: 'partials_en/Prep_s.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Расписание', {templateUrl: 'partials_en/Raspis.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Новости', {templateUrl: 'partials_en/Novos.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Документы', {templateUrl: 'partials_en/Dock.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Направления и специальности', {templateUrl: 'partials_en/Spec.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/О кафедре', {templateUrl: 'partials/Ab_al.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Бакалавриат', {templateUrl: 'partials/Bag_k.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Контакты', {templateUrl: 'partials/Kont_al.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Магистратура', {templateUrl: 'partials/Mg_s.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Научная работа', {templateUrl: 'partials/Nayc_k.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Специалитет', {templateUrl: 'partials/Spec_s.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Преподаватели', {templateUrl: 'partials/Prep_s.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Расписание', {templateUrl: 'partials/Raspis.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Новости', {templateUrl: 'partials/Novos.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Документы', {templateUrl: 'partials/Dock.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Направления и специальности', {templateUrl: 'partials/Spec.html', controller: 'MyCtrl1'});
   
-  $routeProvider.when('/Лаборатории', {templateUrl: 'partials_en/Lab.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Главная', {templateUrl: 'partials_en/Glavnaya.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/Фотогалерея', {templateUrl: 'partials_en/Foto.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/О проекте', {templateUrl: 'partials/Razrab.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Лаборатории', {templateUrl: 'partials/Lab.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Главная', {templateUrl: 'partials/Glavnaya.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Фотогалерея', {templateUrl: 'partials/Foto.html', controller: 'MyCtrl1'});
   $routeProvider.when('/Русская версия', {templateUrl: 'kafkaf/app/index.html', controller: 'MyCtrl1'});
   $routeProvider.otherwise({redirectTo: '/Главная'});
 }]);
