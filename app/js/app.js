@@ -25,9 +25,10 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/Лаборатории', {templateUrl: 'partials/Lab.html', controller: 'MyCtrl1'});
   $routeProvider.when('/О проекте', {templateUrl: 'partials/Razrab.html', controller: 'MyCtrl1'});
   $routeProvider.when('/Главная', {templateUrl: 'partials/Glavnaya.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/Фотогалерея', {templateUrl: 'partials/Foto.html', controller: 'MyCtrl1'});
-  $routeProvider.otherwise({redirectTo: '/Главная'});
-}]);
+  $routeProvider.when('/Фотогалерея', {templateUrl: 'partials/Foto.html', controller: 'MyCtrl1'});
+  
+    $routeProvider.otherwise({redirectTo: '/Главная'});
+}]);    
 
 $(function(){
  if ($(window).scrollTop()>="10") $("#ToTop").fadeIn("slow")
