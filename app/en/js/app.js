@@ -24,7 +24,8 @@ config(['$routeProvider', function($routeProvider) {
   
   $routeProvider.when('/Лаборатории', {templateUrl: 'partials_en/Lab.html', controller: 'MyCtrl1'});
   $routeProvider.when('/Главная', {templateUrl: 'partials_en/Glavnaya.html', controller: 'MyCtrl1'});
-    $routeProvider.when('/Фотогалерея', {templateUrl: 'partials_en/Foto.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Фотогалерея', {templateUrl: 'partials_en/Foto.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/Русская версия', {templateUrl: 'kafkaf/app/index.html', controller: 'MyCtrl1'});
   $routeProvider.otherwise({redirectTo: '/Главная'});
 }]);
 
